@@ -90,14 +90,14 @@ header {
 	display: flex;
 	align-items: center;
 }
-
+/* 
 .logo h1::before{
 	content:'	-';
 }
 
 .logo h1::after{
 	content:'-	';
-}
+} */
 
 .sp-menu {
 	margin-left: auto;
@@ -121,8 +121,8 @@ header {
 
 header h1 {
 	padding:15px 15px 15px 15px;
-	margin-left: 4%;
-	font-size: 50px;
+	margin-left: 2%;
+	font-size: 35px;
 	font-weight: bold;
 	color: white;
 	/* background-color: pink; */
@@ -267,7 +267,7 @@ main {
 	font-family: sans-serif;
 	display: inline-block;
 	/* padding: 0 7%; */
-	border-radius: 15%;
+	border-radius: 10px;
 	background-color: chartreuse;
 	white-space: nowrap;
 }
@@ -346,9 +346,9 @@ footer {
 
 
 footer h1 {
-	padding:22px 10px 10px 22px;
-	margin-left: 4%;
-	font-size: 45px;
+	padding:22px 5px 5px 15px;
+	margin-left: 2%;
+	font-size: 35px;
 	color: black;
 	font-weight: bold;
 	/* background-color: pink; */
@@ -356,7 +356,7 @@ footer h1 {
 
 .fot-detail {
 	line-height: 25px;
-	margin: 23px 0 0 23px;
+	margin: 10px 0 0 10px;
 }
 
 iframe {
