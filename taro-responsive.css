@@ -1,0 +1,56 @@
+@media (min-width: 900px) {
+
+	.h-container {
+	background-color: green;
+	/* position: relative; */
+ }
+
+ .sp-menu {
+	display: none;
+ }
+
+ .pc-menu {
+	margin-left: auto;
+	 display: block;
+	 color: white;
+	 background-color: red;
+	 width: 75%;
+	 font-size: 1.5em;
+ }
+
+ .pc-menu ul {
+	 display: flex;
+ }
+
+ .pc-menu a {
+	 display: block;
+	padding: 20px 10px;
+	margin-top: 10px;
+	margin-left: 25px;
+	background-color: yellow;
+	border-radius: 6px;
+ }
+
+ .main-nav li{
+	display: none;
+ }
+
+
+
+ 
+
+/*  
+.hed-left h1 {
+	padding: 55px 0 20px 10px;
+	font-size: 35px;
+}
+
+ .hed-right {
+	 background-color: green;
+	 margin: 50px 10px 0 0;
+ }
+ .hed-right a {
+	padding:20px 8px;
+	font-size: 25px;
+} */
+}
