@@ -38,7 +38,7 @@ body {
 	line-height: 1;
 	width: 100%;
 	/* height: 100%; */
-	background-image: url("lightblue_00052.jpg");
+	background-image: url("haikei/paint_00016.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -69,6 +69,7 @@ a{
   .wrapper {
 	/* height: 100%; */
 	width: 100%;
+	overflow: hidden;
 }
 
 header {
@@ -123,6 +124,61 @@ header {
 	cursor: pointer;
 	/* background-color: rebeccapurple; */
 }
+
+
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  box-sizing: border-box;
+}
+.menu-trigger {
+  position: relative;
+	top: 15px;
+	right: 25px;
+  width: 50px;
+  height: 44px;
+  background: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  transition: .6s cubic-bezier(.68, -.5, .32, 1.6);
+}
+.menu-trigger:focus:not(:focus-visible) {
+  outline: none;
+}
+.menu-trigger span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background:whitesmoke;
+  border-radius: 4px;
+  transition: .3s .2s;
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+.menu-trigger span:nth-of-type(2) {
+  top: 20px;
+  left: 0;
+}
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+  left: 0;
+}
+.menu-trigger.active {
+  transform: rotate(180deg);
+}
+.menu-trigger.active span:nth-of-type(1) {
+  transform: translateY(20px) rotate(-45deg);
+}
+.menu-trigger.active span:nth-of-type(2) {
+  transform: translateY(0) rotate(45deg);
+}
+.menu-trigger.active span:nth-of-type(3) {
+  opacity: 0;
+}
+
 
 header h1 {
 	padding:15px 15px 15px 15px;
@@ -244,10 +300,22 @@ main {
 	margin:0 auto;
 }
 
+.main-visual {
+	height: 400px;
+	position: relative;
+}
+
 .store-picture{
 	width: 100%;
-	/* height: 100%; */
-	/* object-fit: cover; */
+	height: 400px;
+	position: absolute;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.current {
+	opacity: 1;
 }
 
 .main-nav {
@@ -298,7 +366,7 @@ main {
 }
 
 .main-menu h3 {
-	font-size: 130%;
+	font-size: 95%;
 	z-index: 1;
 	position: absolute;
   color: whitesmoke;
@@ -349,6 +417,8 @@ footer {
 	background-color: gray;
 	letter-spacing: 3px;
 	color: white;
+	text-align: center;
+
 }
 
 .f-container {
@@ -378,6 +448,21 @@ footer h1 {
 .fot-detail {
 	line-height: 25px;
 	margin: 10px 0 0 10px;
+}
+
+.fot-detail ul {
+	margin: 0 auto;
+	/* text-align: center; */
+	/* background-color: red; */
+	width: 390px;
+}
+
+.fot-detail li {
+	text-align: left;
+	font-size: 1.2em;
+	/* margin: 0 auto; */
+	/* display: inline-block; */
+
 }
 
 iframe {
